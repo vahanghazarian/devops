@@ -10,5 +10,11 @@ COPY . /usr/share/nginx/html
 docker build -t localtime:v1 .
 
 # Docker Run the container
-docker run -d -p 800:800 localtime:v1
+docker run -d -p 5000:80 localtime:v1
+
+# Open index.html
+http://95.216.217.20:5000/index.html
+
+# Open monitoring.html
+http://95.216.217.20:5000/monitoring.html
 
